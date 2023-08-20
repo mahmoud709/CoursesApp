@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses Academy</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <!-- Bootstrap Css File -->
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
     <!-- Fontawesome Library -->
@@ -17,80 +18,311 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Poppins:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Poppins:wght@200;300;400&family=Robohref:ital,wght@0,100;0,300;0,400;0,500;1,500&display=swap"
         rel="stylesheet" />
     <!--Main Css File -->
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top mb-2">
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.AVIF" alt="logo">
-                <a class="navbar-brand fw-bolder" href="index.html">Online Study</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#">الصفحه الرئيسيه</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#">الاهداف</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#">لوحه التحكم</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#">تواصل معنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-6 fw-bold" aria-current="page" href="login.html">تسجيل الدخول</a>
-                    </li>
-                </ul>
-                <div class="mode-container fs-4 cursor-pointer" id="modeToggle">
-                    <i class="fa-regular fa-moon " id="moonIcon"></i>
-                    <i class="fa-solid fa-sun " id="sunIcon"></i>
+    <div class="container">
+        <!-- start Nav -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top mb-2">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.AVIF" alt="logo" />
+                    <a class="navbar-brand fw-bolder" href="index.html"><span class="main-color">Online</span> Study</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="index.html">الصفحه
+                                الرئيسيه</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page"
+                                href="index.html#ourTarget">اهدافنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#">لوحه التحكم</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="contact.html">تواصل
+                                معنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="login.html">تسجيل
+                                الدخول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="login.html">حسابي
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mode-container fs-4 cursor-pointer" id="modeToggle">
+                        <i class="fa-regular fa-moon" id="moonIcon"></i>
+                        <i class="fa-solid fa-sun" id="sunIcon"></i>
+                    </div>
                 </div>
             </div>
-
-        </div>
-    </nav>
-    <div class="container">
+        </nav>
+        <!-- End Nav -->
+        <!-- Start HomePage -->
         <main class="homePage row justify-content-center align-content-center">
             <div class="textContent text-center w-100 py-1 col-md-6">
-                <h2 class="text-dark fw-bold">ابدأ التعلم من أجل مستقبل مشرق</h2>
+                <h1 class="fw-bold text-dark"> دورة تطوير مواقع الويب رحلتك نحو إتقان البرمجة</h1>
             </div>
             <div class="image homeImg col-md-6">
                 <img src="images/homeimg.AVIF" alt="homeimg" class="img-fluid">
             </div>
         </main>
+        <!-- End HomePage -->
+        <!-- Start Icons Banner -->
+        <div class="ImagesIcons text-center my-5 py-2">
+            <div class="Icons row">
+                <div class="icon my-3 col-6 col-md-4 col-lg-2 ">
+                    <img src="images/php.AVIF" alt="phpIcon" width="60">
+                </div>
+                <div class="icon my-3 col-6 col-md-4 col-lg-2">
+                    <img src="images/js.AVIF" alt="jsIcon" width="60">
+                </div>
+                <div class="icon my-3 col-6 col-md-4 col-lg-2">
+                    <img src="images/bootstrapIcon.AVIF" alt="bootstrapIcon" width="60">
+                </div>
+                <div class="icon my-3 col-6 col-md-4 col-lg-2">
+                    <img src="images/react.AVIF" alt="reactIcon" width="60">
+                </div>
+                <div class="icon my-3 col-6 col-md-4 col-lg-2">
+                    <img src="images/python.AVIF" alt="pythonIcon" width="60">
+                </div>
+                <div class="icon my-3 col-6 col-md-4 col-lg-2">
+                    <img src="images/html.AVIF" alt="htmlIcon" width="60">
+                </div>
+            </div>
+        </div>
+        <!-- End Icons Banner -->
+        <!-- Scroll Btn -->
         <div class="scrollbtn display-none" id="scrollBtn">
-            <button class="btn main-btn position-fixed bottom-0 end-0 m-5"><i class="fa-solid fa-caret-up"></i></button>
+            <buthrefn class="btn main-btn position-fixed bothrefm-0 end-0 m-5"><i class="fa-solid fa-caret-up"></i>
+            </buthrefn>
         </div>
+        <!-- End Scroll Btn -->
+        <section class="whoUS row align-items-center">
+            <div class="content col-md-6">
+                <div class="title">
+                    <h2 class="fw-bold">نبذة عن الكورس</h2>
+                </div>
+                <p class="py-3 lh-base fs-5">
+                    استعد لاكتشاف عالم تطوير مواقع الويب من خلال دورتنا المميزة. ستمنحك هذه الدورة الفرصة لاحتراف تصميم
+                    وبرمجه مواقع الويب . ستتعلم كيفية بناء واجهات مستخدم جذابة ومتجاوبة باستخدام HTML وCSS،
+                    وتجربة التفاعل باستخدام JavaScript، بالإضافة
+                    إلى إتقان تطوير الخلفيات وقواعد البيانات باستحدام لغة Php انضم إلينا اليوم واحصل على المهارات
+                    اللازمة لتكون مبرمج
+                    ويب متميزًا يمتلك القدرة على بناء تجارب رقمية شاملة ومبتكرة.</p>
+            </div>
+            <div class="image col-md-6 mx-auto">
+                <img src="images/img1.AVIF" alt="image-1" class="rounded-2 course-image" />
+            </div>
+        </section>
+        <!-- study Section -->
+        <section class="studyPlan my-5 mx-1">
+            <div class="title">
+                <h2 class="fw-bold">خطط الدراسة</h2>
+            </div>
+            <div class="cards row mt-5 gap-3 justify-content-center">
+                <div class="card col-md-3 p-0 ">
+                    <div class="images">
+                        <img src="images/htmlCss.AVIF" class="card-img" alt="HtmlCss">
+                    </div>
+                    <div class="card-body">
+                        <div class="cardContent d-flex justify-content-between ">
+                            <span class="fw-bold ls"><span class="duration">20</span>hours</span>
+                            <h5 class="card-title fw-bold text-start">Html-Css Course</h5>
+                        </div>
+                        <p class="card-text"> سوف تتعلم في هذه الدوره أساسيات تطوير الويب بأسلوب مبسّط ومحترف. اكتسب
+                            مهارات تصميم وبرمجة
+                            مواقع جذابة ومتجاوبة</p>
+                    </div>
+                </div>
+                <div class="card col-md-3 p-0">
+                    <div class="images">
+                        <img src="images/JsCourse.AVIF" class="card-img" alt="Js Image">
+                    </div>
+                    <div class="card-body">
+                        <div class="cardContent d-flex justify-content-between ">
+                            <span class="fw-bold ls"><span class="duration">12</span>hours</span>
+                            <h5 class="card-title fw-bold text-start">Java Script Course</h5>
+                        </div>
+                        <p class="card-text"> سوف تكتشف فنون تطوير الويب من الصفر إلى الاحتراف لبناء تجارب مستخدم مذهلة
+                            وديناميّة.</p>
+                    </div>
+                </div>
+                <div class="card col-md-3 p-0">
+                    <div class="images">
+                        <img src="images/ReactCourse.AVIF" class="card-img" alt="ReactJSImage">
+                    </div>
+                    <div class="card-body">
+                        <div class="cardContent d-flex justify-content-between ">
+                            <span class="fw-bold ls"><span class="duration">10</span>hours</span>
+                            <h5 class="card-title fw-bold text-start">ReactJs Course</h5>
+                        </div>
+                        <p class="card-text"> ستكتشف عالم تطوير الواجهات الحديثة مع ReactJs,لبناء تطبيقات متفاعلة وقوية
+                            تتيح تجارب مستخدم استثنائية.</p>
+                    </div>
+                </div>
+                <div class="card col-md-3 p-0">
+                    <div class="images">
+                        <img src="images/bootstrapImg.AVIF" class="card-img" alt="bootstrapImg">
+                    </div>
+                    <div class="card-body">
+                        <div class="cardContent d-flex justify-content-between ">
+                            <span class="fw-bold ls"><span class="duration">4</span>hours</span>
+                            <h5 class="card-title fw-bold text-start">Bootstrap Course</h5>
+                        </div>
+                        <p class="card-text">من خلال دراسة دورة Bootstrap، ستمكن نفسك من تطوير واجهات مستخدم متجاوبة
+                            وذات تصميم رائع، مما يعزز تجربة المستخدم عبر مختلف الأجهزة والشاشات.</p>
+                    </div>
+                </div>
+                <div class="card col-md-3 p-0">
+                    <div class="images">
+                        <img src="images/phpImage.AVIF" class="card-img" alt="phpImg">
+                    </div>
+                    <div class="card-body">
+                        <div class="cardContent d-flex justify-content-between ">
+                            <span class="fw-bold ls"><span class="duration">12</span>hours</span>
+                            <h5 class="card-title fw-bold text-start">Php Course</h5>
+                        </div>
+                        <p class="card-text">من خلال دراسة دورة PHP، ستكتسب المعرفة والمهارات اللازمة لتطوير تطبيقات
+                            مبتكرة ومتطورة، والتفاعل مع قواعد البيانات لتخزين واسترجاع المعلومات بكفاءة.</p>
+                    </div>
+                </div>
+                <div class="card col-md-3 p-0">
+                    <div class="images">
+                        <img src="images/PythonImg.AVIF" class="card-img" alt="PythonImg">
+                    </div>
+                    <div class="card-body">
+                        <div class="cardContent d-flex justify-content-between ">
+                            <span class="fw-bold ls"><span class="duration">8</span>hours</span>
+                            <h5 class="card-title fw-bold text-start">Python Course</h5>
+                        </div>
+                        <p class="card-text"> سيتمكن الطلاب من تطبيق مفاهيم Python بشكل عملي، مما يمكّنهم من تطوير
+                            تطبيقات وحلول برمجية إبداعية تلبي احتياجات السوق .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End study Section -->
+        <section class="mission my-5" id="ourTarget">
+            <div class="missionText ">
+                <div class="title">
+                    <h2 class="fw-bold">اهدافنا </h2>
+                </div>
+                <p class="py-3 lh-base fs-5">هدفنا هي تمكين المتعلمين على موقع الدورات الخاص بنا بمجموعة شاملة من مهارات
+                    تطوير الويب. من خلال
+                    مناهجنا المصممة بعناية، نرشدك خلال لغات البرمجة الأساسية مثل HTML، CSS، وBootstrap، لضمان تمكنك من
+                    صناعة واجهات ويب جذابة ومتجاوبة. اغمر نفسك في عالم JavaScript لإضافة التفاعل والديناميكية إلى
+                    إبداعاتك.
+
+                    مع تقدمنا، تتوسع مهمتنا لتشمل إتقان قوة PHP، مما يمكّنك من بناء خلفيات قوية ووظائف ديناميكية . وليس
+                    هذا كلّ شيء – نسعى إلى الأمام مع ReactJS، لنزودك بالقدرات اللازمة لإبداع تجارب مستخدم حديثة وسلسة
+                    وفعّالة.
+
+                    انضم إلينا في هذه الرحلة التحويلية حيث نجعل من مهمتنا تزويدك بالمهارات الضرورية لتفوق في عالم تطوير
+                    الويب المتغير باستمرار نجاحك هو هدفنا النهائي.
+                    الدورة ستزوّد الطلاب بالمهارات والمعرفة التي تجعلهم قادرين بسهولة على العثور على فرص عمل فور
+                    انتهائهم منها، حيث سيكتسبون الخبرات العملية التي يبحث عنها أصحاب العمل في سوق العمل الحالي.
+                    </b>
+            </div>
+            <!-- <div class="image col-md-6 mx-auto ">
+                <img src="images/goals.AVIF" alt="goalsImg" class="rounded-2 course-image" height="500">
+            </div> -->
+        </section>
     </div>
-    <div class="container my-4">
-    <section class="whoUS row  align-items-center">
-        <div class="content col-md-8">
-            <b class="fw-bold fs-4">نبذه عنا</b>
-            <h1 class="fw-bold"> دورة تطوير مواقع الويب <br /> رحلتك نحو إتقان البرمجة</h1>
-            <p class="w-75">
-                استعد لاكتشاف عالم تطوير مواقع الويب  من خلال دورتنا المميزة. ستمنحك هذه الدورة الفرصة لاحتراف تصميم
-                وبرمجه مواقع الويب  . ستتعلم كيفية بناء واجهات مستخدم جذابة ومتجاوبة باستخدام HTML وCSS،
-                وتجربة التفاعل باستخدام JavaScript، بالإضافة
-                إلى إتقان تطوير الخلفيات وقواعد البيانات. انضم إلينا اليوم واحصل على المهارات اللازمة لتكون مطور Full
-                Stack متميزًا يمتلك القدرة على بناء تجارب رقمية شاملة ومبتكرة.</p>
+    <!-- Start Footer -->
+    <footer class="bg-light text-muted pt-3 mb-2 py-5 ">
+        <div class="text-center text-md-start mt-5 container">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <a class="navbar-brand text-capitalize fw-bold" href="index.html">
+                        <span class="main-color">online </span>study
+                    </a>
+                    <p>
+                        Here you can use rows and columns href organize your footer
+                        content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                    <p>
+                        <a href="#!" class="text-reset">
+                            Angular
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">
+                            React
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">
+                            Vue
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">
+                            Laravel
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Useful as</h6>
+                    <p>
+                        <a href="#!" class="text-reset">
+                            Pricing
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">
+                            Settings
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">
+                            Orders
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">
+                            Help
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p>
+                        <i class="fas fa-home me-3"></i> New York, NY 10012, US
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone me-3"></i> + 01 234 567 88
+                    </p>
+                    <p>
+                        <i class="fas fa-print me-3"></i> + 01 234 567 89
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="image col-md-4 mx-auto">
-            <img src="images/img1.jpg" alt="" >
-        </div>
-    </section>
-    </div>
+    </footer>
     <!-- Boostarp js File -->
     <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
