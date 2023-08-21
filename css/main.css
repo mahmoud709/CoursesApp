@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Cairo", sans-serif;
   scroll-behavior: smooth;
+  /* user-select: none; */
+  text-transform: capitalize;
+  
 }
 html,
 body {
@@ -14,6 +17,7 @@ body {
   --main-color: #d0004a;
   --primary-color: #fff;
   --light-color: #f10356;
+  --dark-color:#060E1F;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -23,8 +27,9 @@ body {
   height: 20px;
   background-color: var(--main-color);
 }
-nav + section{
-  margin-top: 100px;
+
+nav + section,.courseDetails{
+  margin: 100px 0;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -87,6 +92,44 @@ nav + section{
 .display-none{
     display: none;
 }
+#scrollBtn button{
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
 .course-image {
   max-width: 100%;
+}
+.right,.left{
+  top: 50%;
+  padding: 5px;
+  background-color: var(--main-color);
+  color: var(--primary-color);
+}
+.right{
+  right: 5%;
+}
+.left{
+  left: 5%;
+}
+.cardCourse{
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+}
+.cardCourse:hover{
+  transform: scaleY(1.06);
+  -webkit-transform: scaleY(1.06);
+  -moz-transform: scaleY(1.06);
+  -ms-transform: scaleY(1.06);
+  -o-transform: scaleY(1.06);
+}
+.contentDetails{
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+}
+.cardContent h5,.cardContent p,.cardContent h3{
+  color: var(--dark-color);
 }

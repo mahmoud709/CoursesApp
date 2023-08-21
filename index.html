@@ -27,7 +27,7 @@
 <body>
     <div class="container">
         <!-- start Nav -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top mb-2">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow fixed-top">
             <div class="container">
                 <div class="logo">
                     <img src="images/logo.AVIF" alt="logo" />
@@ -108,8 +108,9 @@
         <!-- End Icons Banner -->
         <!-- Scroll Btn -->
         <div class="scrollbtn display-none" id="scrollBtn">
-            <buthrefn class="btn main-btn position-fixed bothrefm-0 end-0 m-5"><i class="fa-solid fa-caret-up"></i>
-            </buthrefn>
+            <button class="btn main-btn position-fixed ">
+                <i class="fa-solid fa-caret-up"></i>
+            </button>
         </div>
         <!-- End Scroll Btn -->
         <section class="whoUS row align-items-center">
@@ -134,95 +135,130 @@
             <div class="title">
                 <h2 class="fw-bold">خطط الدراسة</h2>
             </div>
-            <div class="cards row mt-5 gap-3 justify-content-center">
-                <div class="card col-md-3 p-0 ">
-                    <div class="images">
-                        <img src="images/htmlCss.AVIF" class="card-img" alt="HtmlCss">
-                    </div>
-                    <div class="card-body">
-                        <div class="cardContent d-flex justify-content-between ">
-                            <span class="fw-bold ls"><span class="duration">20</span>hours</span>
-                            <h5 class="card-title fw-bold text-start">Html-Css Course</h5>
+            <div class="cards row mt-5 gap-3 justify-content-center position-relative">
+                <div class="arrows d-flex justify-content-between cursor-pointer">
+                    <i class="fa-solid fa-arrow-left fa-rotate-180 rounded-2 fs-3 position-absolute right"></i>
+                    <i class="fa-solid fa-arrow-left fs-3 position-absolute rounded-2 left "></i>
+                </div>
+                <div class="row mt-5 gap-3 justify-content-center">
+                    <div class="card col-md-3 p-0 cardCourse">
+                        <div class="images">
+                            <img src="images/htmlCss.AVIF" class="card-img" alt="HtmlCss">
                         </div>
-                        <p class="card-text"> سوف تتعلم في هذه الدوره أساسيات تطوير الويب بأسلوب مبسّط ومحترف. اكتسب
-                            مهارات تصميم وبرمجة
-                            مواقع جذابة ومتجاوبة</p>
+                        <div class="card-body">
+                            <div class="cardContent d-flex justify-content-between ">
+                                <span class="fw-bold ls"><span class="duration">20</span>hours</span>
+                                <h5 class="card-title fw-bold text-start">Html-Css Course</h5>
+                            </div>
+                            <p class="card-text"> سوف تتعلم في هذه الدوره أساسيات تطوير الويب بأسلوب مبسّط ومحترف. اكتسب
+                                مهارات تصميم وبرمجة
+                                مواقع جذابة ومتجاوبة</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 p-0 cardCourse">
+                        <div class="images">
+                            <img src="images/JsCourse.AVIF" class="card-img" alt="Js Image">
+                        </div>
+                        <div class="card-body">
+                            <div class="cardContent d-flex justify-content-between ">
+                                <span class="fw-bold ls"><span class="duration">12</span>hours</span>
+                                <h5 class="card-title fw-bold text-start">Java Script Course</h5>
+                            </div>
+                            <p class="card-text"> سوف تكتشف فنون تطوير الويب من الصفر إلى الاحتراف لبناء تجارب مستخدم
+                                مذهلة
+                                وديناميّة.</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 p-0 cardCourse">
+                        <div class="images">
+                            <img src="images/ReactCourse.AVIF" class="card-img" alt="ReactJSImage">
+                        </div>
+                        <div class="card-body">
+                            <div class="cardContent d-flex justify-content-between ">
+                                <span class="fw-bold ls"><span class="duration">10</span>hours</span>
+                                <h5 class="card-title fw-bold text-start">ReactJs Course</h5>
+                            </div>
+                            <p class="card-text"> ستكتشف عالم تطوير الواجهات الحديثة مع ReactJs,لبناء تطبيقات متفاعلة
+                                وقوية
+                                تتيح تجارب مستخدم استثنائية.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-md-3 p-0">
-                    <div class="images">
-                        <img src="images/JsCourse.AVIF" class="card-img" alt="Js Image">
-                    </div>
-                    <div class="card-body">
-                        <div class="cardContent d-flex justify-content-between ">
-                            <span class="fw-bold ls"><span class="duration">12</span>hours</span>
-                            <h5 class="card-title fw-bold text-start">Java Script Course</h5>
+                <div class="row gap-3 justify-content-center">
+                    <div class="card col-md-3 p-0 cardCourse">
+                        <div class="images">
+                            <img src="images/bootstrapImg.AVIF" class="card-img" alt="bootstrapImg">
                         </div>
-                        <p class="card-text"> سوف تكتشف فنون تطوير الويب من الصفر إلى الاحتراف لبناء تجارب مستخدم مذهلة
-                            وديناميّة.</p>
+                        <div class="card-body">
+                            <div class="cardContent d-flex justify-content-between ">
+                                <span class="fw-bold ls"><span class="duration">4</span>hours</span>
+                                <h5 class="card-title fw-bold text-start">Bootstrap Course</h5>
+                            </div>
+                            <p class="card-text">من خلال دراسة دورة Bootstrap، ستمكن نفسك من تطوير واجهات مستخدم متجاوبة
+                                وذات تصميم رائع، مما يعزز تجربة المستخدم عبر مختلف الأجهزة والشاشات.</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 p-0 cardCourse">
+                        <div class="images">
+                            <img src="images/phpImage.AVIF" class="card-img" alt="phpImg">
+                        </div>
+                        <div class="card-body">
+                            <div class="cardContent d-flex justify-content-between ">
+                                <span class="fw-bold ls"><span class="duration">12</span>hours</span>
+                                <h5 class="card-title fw-bold text-start">Php Course</h5>
+                            </div>
+                            <p class="card-text">من خلال دراسة دورة PHP، ستكتسب المعرفة والمهارات اللازمة لتطوير تطبيقات
+                                مبتكرة ومتطورة، والتفاعل مع قواعد البيانات لتخزين واسترجاع المعلومات بكفاءة.</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 p-0 cardCourse">
+                        <div class="images">
+                            <img src="images/PythonImg.AVIF" class="card-img" alt="PythonImg">
+                        </div>
+                        <div class="card-body">
+                            <div class="cardContent d-flex justify-content-between ">
+                                <span class="fw-bold ls"><span class="duration">8</span>hours</span>
+                                <h5 class="card-title fw-bold text-start">Python Course</h5>
+                            </div>
+                            <p class="card-text"> سيتمكن الطلاب من تطبيق مفاهيم Python بشكل عملي، مما يمكّنهم من تطوير
+                                تطبيقات وحلول برمجية إبداعية تلبي احتياجات السوق .</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-md-3 p-0">
-                    <div class="images">
-                        <img src="images/ReactCourse.AVIF" class="card-img" alt="ReactJSImage">
-                    </div>
-                    <div class="card-body">
-                        <div class="cardContent d-flex justify-content-between ">
-                            <span class="fw-bold ls"><span class="duration">10</span>hours</span>
-                            <h5 class="card-title fw-bold text-start">ReactJs Course</h5>
-                        </div>
-                        <p class="card-text"> ستكتشف عالم تطوير الواجهات الحديثة مع ReactJs,لبناء تطبيقات متفاعلة وقوية
-                            تتيح تجارب مستخدم استثنائية.</p>
-                    </div>
-                </div>
-                <div class="card col-md-3 p-0">
-                    <div class="images">
-                        <img src="images/bootstrapImg.AVIF" class="card-img" alt="bootstrapImg">
-                    </div>
-                    <div class="card-body">
-                        <div class="cardContent d-flex justify-content-between ">
-                            <span class="fw-bold ls"><span class="duration">4</span>hours</span>
-                            <h5 class="card-title fw-bold text-start">Bootstrap Course</h5>
-                        </div>
-                        <p class="card-text">من خلال دراسة دورة Bootstrap، ستمكن نفسك من تطوير واجهات مستخدم متجاوبة
-                            وذات تصميم رائع، مما يعزز تجربة المستخدم عبر مختلف الأجهزة والشاشات.</p>
-                    </div>
-                </div>
-                <div class="card col-md-3 p-0">
-                    <div class="images">
-                        <img src="images/phpImage.AVIF" class="card-img" alt="phpImg">
-                    </div>
-                    <div class="card-body">
-                        <div class="cardContent d-flex justify-content-between ">
-                            <span class="fw-bold ls"><span class="duration">12</span>hours</span>
-                            <h5 class="card-title fw-bold text-start">Php Course</h5>
-                        </div>
-                        <p class="card-text">من خلال دراسة دورة PHP، ستكتسب المعرفة والمهارات اللازمة لتطوير تطبيقات
-                            مبتكرة ومتطورة، والتفاعل مع قواعد البيانات لتخزين واسترجاع المعلومات بكفاءة.</p>
-                    </div>
-                </div>
-                <div class="card col-md-3 p-0">
-                    <div class="images">
-                        <img src="images/PythonImg.AVIF" class="card-img" alt="PythonImg">
-                    </div>
-                    <div class="card-body">
-                        <div class="cardContent d-flex justify-content-between ">
-                            <span class="fw-bold ls"><span class="duration">8</span>hours</span>
-                            <h5 class="card-title fw-bold text-start">Python Course</h5>
-                        </div>
-                        <p class="card-text"> سيتمكن الطلاب من تطبيق مفاهيم Python بشكل عملي، مما يمكّنهم من تطوير
-                            تطبيقات وحلول برمجية إبداعية تلبي احتياجات السوق .</p>
-                    </div>
-                </div>
-            </div>
         </section>
         <!-- End study Section -->
+        <!-- Start courses Section -->
+        <section class="courses">
+            <div class="title">
+                <h2 class="fw-bold">الدورات الحاليه</h2>
+            </div>
+            <a href="courseDetails.html">
+                <div class="card col-md-3 p-0 cardCourse mt-4  mx-auto cursor-pointer">
+                    <div class="courseImage">
+                        <img src="images/JsCourse.AVIF" class="card-img" alt="PythonImg">
+                    </div>
+                    <div class="card-body">
+                        <div class="cardContent">
+                            <h5 class="card-title fw-bold text-end ">دورة تعلم تطبيقات الويب</h5>
+                            <p class="owener text-start my-1">ali ahmed</p>
+                            <p class="card-text text-start">,Html,Css,Bootstrap,JavaScript,Php<br>Python</p>
+                            <h3 class="fw-bold h5">السعر : 5000 <span class="text-start">EGP</span></h3>
+                            <div class="buy">
+                                <a href="checkout.html"><button class="btn main-btn">اشتري الان</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!-- End courses Section -->
         <section class="mission my-5" id="ourTarget">
             <div class="missionText ">
                 <div class="title">
                     <h2 class="fw-bold">اهدافنا </h2>
                 </div>
-                <p class="py-3 lh-base fs-5">هدفنا هي تمكين المتعلمين على موقع الدورات الخاص بنا بمجموعة شاملة من مهارات
+                <p class="py-3 px-2 lh-base fs-5">هدفنا هي تمكين المتعلمين على موقع الدورات الخاص بنا بمجموعة شاملة من
+                    مهارات
                     تطوير الويب. من خلال
                     مناهجنا المصممة بعناية، نرشدك خلال لغات البرمجة الأساسية مثل HTML، CSS، وBootstrap، لضمان تمكنك من
                     صناعة واجهات ويب جذابة ومتجاوبة. اغمر نفسك في عالم JavaScript لإضافة التفاعل والديناميكية إلى

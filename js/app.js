@@ -14,7 +14,7 @@ function changeMood() {
 changeMood();
 
 window.addEventListener(('scroll'), () => {
-    if (window.scrollY >= 500) {
+    if (window.scrollY >= 400) {
         scrollBtn.style.display = "block";
     } else {
         scrollBtn.style.display = "none";
