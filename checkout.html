@@ -20,8 +20,86 @@
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Poppins:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,500&display=swap"
         rel="stylesheet" />
     <!--Main Css File -->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
+    <section class="vh-100" style="background-color: #eee">
+        <div class="container h-100 py-5">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                    <div class="card shopping-cart" style="border-radius: 15px">
+                        <div class="card-body text-black ">
+                            <div class="row">
+                                <div class="col-lg-6 px-5 py-4">
+                                    <h3 class="mb-5 pt-2 text-center fw-bold">المشتريات</h3>
+                                    <div class="d-flex justify-content-between align-items-center flex-column mb-5">
+                                        <div class="ShopImg">
+                                            <img src="images/courseImg.AVIF" class="img-fluid" width="150"
+                                                alt="Course image">
+                                        </div>
+                                        <div class="mt-3">
+                                            <h5 class="fw-bold text-end ">دورة تعلم تطبيقات الويب</h5>
+                                        </div>
+                                    </div>
+                                    <hr class="mb-4">
+                                    <div class="d-flex justify-content-between p-2">
+                                        <p class="fw-bold">الخصم:</p>
+                                        <p class="fw-bold">2000 <span>EGP</span></p>
+                                    </div>
+                                    <div class="d-flex justify-content-between p-2 mb-2"
+                                        style="background-color: #e1f5fe;">
+                                        <h5 class="fw-bold mb-0">السعر:</h5>
+                                        <h5 class="fw-bold mb-0"><span>EGP</span> 2200 </h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 p-5">
+                                    <h3 class="mb-5 pt-2 text-center fw-bold">اختر وسيله الدفع</h3>
+                                    <div class="payMethods mb-3">
+                                        <div class="paymethod1 my-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                            <div class="pay1">
+                                                <input type="radio" id="cards" name="paymentMethod">
+                                                <label for="cards" class="fw-bold">بطاقه إئتمان</label>
+                                            </div>
+                                            <div class="paymentImg">
+                                                <img src="images/processout.svg" alt="paymentMethod1">
+                                            </div>
+                                        </div>
+                                        <div class="paymethod2 my-2 d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                            <div class="pay2">
+                                                <input type="radio" id="wallet" name="paymentMethod" required>
+                                                <label for="wallet" class="fw-bold">محفظه الكترونيه</label>
+                                            </div>
+                                            <div class="paymentImg text-center">
+                                                <img src="images/vodafone.AVIF" alt="vodafone" width="30">
+                                                <img src="images/orangeCash.AVIF" alt="orangeCash" width="40">
+                                                <img src="images/etisalat-cash.AVIF" alt="etisalat-cash" width="50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <form class="mb-3">
+                                        <div class="form-outline mb-5" id="walletData">
+                                            <label class="form-label" for="phone">رقم الهاتف</label>
+                                            <input type="text" class="form-control form-control-lg"
+                                                placeholder=' ادخل رقم الهاتف' id="phone" required max="11" min="11" />
+                                        </div>
+                                        <button type="submit" class="btn main-btn btn-block fw-bold">شراء الان</button>
+                                    </form>
+                                    <h5 class="fw-bold mb-5 pb-5" id="backToCourses">
+                                        <a href="index.html#currentCourses"><i class="fas fa-angle-left me-2"></i>الرجوع الي الدوره</a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
+
 </html>

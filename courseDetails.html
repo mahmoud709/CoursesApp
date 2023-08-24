@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>course Deatails</title>
+    <title>course details</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon" />
     <!-- Bootstrap Css File -->
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
@@ -39,7 +39,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active fs-6 fw-bold" aria-current="page" href="index.html">الصفحه
                                 الرئيسيه</a>
@@ -60,19 +60,19 @@
                                 الدخول</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="login.html">حسابي
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="profile.html">حسابي
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="marketing.html">اعمل كمسوق
+                                الكتروني</a>
+                        </li>
                     </ul>
-                    <div class="mode-container fs-4 cursor-pointer" id="modeToggle">
-                        <i class="fa-regular fa-moon" id="moonIcon"></i>
-                        <i class="fa-solid fa-sun" id="sunIcon"></i>
-                    </div>
                 </div>
             </div>
         </nav>
     </div>
-    <section class="courseDetails ">
+    <section class="courseDetails marginTop">
         <div class="contentDetails w-100 h-50 p-5">
             <h2 class="card-title fw-bold text-end">دورة تعلم تطبيقات الويب</h2>
             <p class="py-3">
@@ -84,85 +84,81 @@
                 على فهم عميق لكل لغة وكيفية استخدامها لبناء واجهات المستخدم الجميلة
                 والمتقدمة وتطبيقات الويب الديناميكية.
             </p>
+            <h3>ماذا ستتعلم من هذه الدوره ؟</h3>
+            <ul >
+                <li>ستتيح لهم الفرصة لتطوير صفحات ويب مذهلة باستخدام لغة HTML</li>
+                <li>سيتمكنون من تحقيق تناغم مثالي بين العناصر باستخدام لغة CSS</li>
+                <li>الانطلاق بقوة مع Bootstrap: سيكتسبون المهارات اللازمة لاستخدام إطار العمل Bootstrap وبناء مواقع
+                    متجاوبة واستثنائية</li>
+                <li>إحياء التفاعل بواسطة JavaScript: سيتعلمون كيفية إضفاء الحياة والتفاعل على صفحاتهم باستخدام لغة
+                    JavaScript</li>
+                <li>بناء المستقبل مع PHP: سيتمكنون من تطوير تطبيقات ويب ديناميكية باستخدام لغة PHP</li>
+                <li>سيتعلمون كيفية بناء واجهات مستخدم استثنائية باستخدام ReactJS</li>
+                <li>سيمنحون أنفسهم الفرصة لبرمجة التطبيقات باستخدام لغة Python القوية والمتعددة الاستخدامات</li>
+            </ul>
         </div>
     </section>
-    <section class="card py-4 px-2 my-4">
-        <div class="courseInfo d-flex justify-content-around align-items-center ">
+    <section class="card py-4 px-2 my-4 courseInfo">
+        <div class="d-flex flex-md-row flex-column justify-content-around align-items-center ">
             <div class="courseImg ">
-                <img src="images/JsCourse.AVIF" alt="" width="200">
+                <img src="images/courseImg.AVIF" alt="ImageCourseDetails" width="200">
             </div>
-            <div class="coursePrice">
-                <h4 class="fw-bold">السعر : 5000 <span class="text-start">EGP</span></h4>
-                <div class="buy">
-                    <a href="checkout.html"><button class="btn main-btn">اشتري الان</button></a>
+            <div class="coursePrice mt-4">
+                <h4 class="fw-bold">السعر : <span><del>4800</del> 2200 <span class="text-start">EGP</span></span> </h4>
+                <div class="buy text-center">
+                    <a href="checkout.html"><button class="btn main-btn fw-bold">اشتري الان</button></a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Scroll Btn -->
-    <div class="scrollbtn display-none" id="scrollBtn">
-        <button class="btn main-btn position-fixed">
-            <i class="fa-solid fa-caret-up"></i>
-        </button>
-    </div>
-    <!-- End Scroll Btn -->
     <!-- Start Footer -->
-    <footer class="bg-light text-muted pt-3 mb-2 py-5">
+    <footer class="bg-light  pt-3 mb-2 ">
         <div class="text-center text-md-start mt-5 container">
             <div class="row mt-3">
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <a class="navbar-brand text-capitalize fw-bold" href="index.html">
-                        <span class="main-color">online </span>study
-                    </a>
-                    <p>
-                        Here you can use rows and columns href organize your footer
-                        content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
+                <div class="col-md-5 mb-4">
+                    <h4 class="text-end fw-bold">معلومات عن Courza</h4>
+                    <article class="text-end lh-lg fw-bold text-muted w-75">
+                        موقع courza يقدم دورات في HTML، CSS، JavaScript،ReactJs، Bootstrap، PHP،Python بالإضافة إلى
+                        كيفية
+                        العمل مع
+                        هذه التقنيات.
+                        استفد من محتوى تعليمي متميز يغطي البرمجة وتصميم المواقع وتطوير التطبيقات.
+                    </article>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-                    <p>
-                        <a href="#!" class="text-reset"> Angular </a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset"> React </a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset"> Vue </a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset"> Laravel </a>
-                    </p>
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-end fw-bold">الكورسات الحاليه</h4>
+                    <ul class="text-end text-muted">
+                        <li><b>Html</b></li>
+                        <li><b>CSS-Bootstrap</b></li>
+                        <li><b>JavaScript</b></li>
+                        <li><b>ReactJS</b></li>
+                        <li><b>Php</b></li>
+                        <li><b>Python</b></li>
+                        <li><b>How to work</b></li>
+                    </ul>
                 </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4">Useful as</h6>
-                    <p>
-                        <a href="#!" class="text-reset"> Pricing </a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset"> Settings </a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset"> Orders </a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-reset"> Help </a>
-                    </p>
-                </div>
-
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-                    <p>
-                        <i class="fas fa-envelope me-3"></i>
-                        info@example.com
-                    </p>
-                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                <div class="col-md-3 mb-4">
+                    <h4 class="text-end fw-bold">وسائل الدفع المتاحه</h4>
+                    <div class="payMethod text-end">
+                        <div class="paymentImg my-2">
+                            <img src="images/processout.svg" alt="paymentMethod1">
+                        </div>
+                        <div class="paymentImg  my-2">
+                            <img src="images/vodafone.AVIF" alt="vodafone" width="30">
+                            <img src="images/orangeCash.AVIF" alt="orangeCash" width="40">
+                            <img src="images/etisalat-cash.AVIF" alt="etisalat-cash" width="50">
+                        </div>
+                        <h4 class="text-end fw-bold">وسائل السحب المتاحه</h4>
+                        <div class="paymentImg  my-2">
+                            <img src="images/vodafone.AVIF" alt="vodafone" width="30">
+                            <img src="images/orangeCash.AVIF" alt="orangeCash" width="40">
+                            <img src="images/etisalat-cash.AVIF" alt="etisalat-cash" width="50">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
+    <!-- End Footer -->
     <!-- Boostarp js File -->
     <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
